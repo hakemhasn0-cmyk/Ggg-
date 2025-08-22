@@ -1,0 +1,203 @@
+/* تنسيقات عامة */
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+  direction: rtl;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #00695c;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #555;
+}
+
+/* الآية */
+.quran-verse {
+  background: #e0f2f1;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* إجمالي التبرعات */
+.total-donations {
+  background: #fff3e0;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.total-donations h2 {
+  margin: 0 0 10px 0;
+  color: #e65100;
+}
+
+#total-amount {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d84315;
+}
+
+/* أقسام رئيسية */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section-title {
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+/* أزرار اختيار العملة */
+.currency-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.currency-btn {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #fff;
+  transition: background 0.3s, border 0.3s;
+}
+
+.currency-btn.active {
+  background: #00695c;
+  color: white;
+  border-color: #004d40;
+}
+
+/* النموذج */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* زر التبرع */
+.donate-btn {
+  width: 100%;
+  padding: 10px;
+  background: #e65100;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background: #bf360c;
+}
+
+/* قائمة المتبرعين */
+.donors-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.donors-list {
+  margin-top: 10px;
+}
+
+.donor-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.donor-item:last-child {
+  border-bottom: none;
+}
+
+.donor-name {
+  font-weight: bold;
+  color: #00695c;
+}
+
+.donor-amount {
+  color: #d84315;
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.donor-date {
+  font-size: 13px;
+  color: #777;
+}
+
+.donor-message {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #444;
+  font-style: italic;
+}
+
+/* حالة فارغة */
+.empty-state {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+.empty-state i {
+  font-size: 24px;
+  color: #d84315;
+  margin-bottom: 8px;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background: #00695c;
+  color: white;
+  border-radius: 8px;
+}
